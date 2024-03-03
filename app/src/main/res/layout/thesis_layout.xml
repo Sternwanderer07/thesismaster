@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:background="@color/white"
+    app:cardBackgroundColor="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="?android:attr/selectableItemBackground">
+        >
+
+        <ImageView
+            android:id="@+id/thesisImageStar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src= "@drawable/stars0"/>
+
+<FrameLayout
+    android:id="@+id/frame_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toEndOf="@id/thesisImageStar"
+    android:layout_toStartOf="@id/thesisImageArrow"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/thesisText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Titel Arbeit 1"
+            android:paddingStart="10dp"
+            android:buttonTint="@color/grey_700"
+            android:textColor="@color/grey_700"
+            />
+
+        <TextView
+            android:id="@+id/thesisText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thesisText1"
+
+            android:text="Abgabefrist: "
+            android:textSize="14dp"
+            android:paddingStart="10dp"
+            android:buttonTint="@color/grey_700"
+            android:textColor="@color/grey_700"
+            />
+        <TextView
+            android:id="@+id/thesisText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thesisText1"
+            android:layout_toEndOf="@id/thesisText3"
+
+            android:text="TT/MM/JJJJ"
+            android:textSize="14dp"
+            android:paddingStart="10dp"
+            android:buttonTint="@color/grey_700"
+            android:textColor="@color/grey_700"
+            />
+    </RelativeLayout>
+</FrameLayout>
+        <ImageView
+            android:id="@+id/thesisImageArrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src= "@drawable/ic_action_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

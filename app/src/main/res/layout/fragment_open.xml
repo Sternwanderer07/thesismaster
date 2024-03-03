@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background"    >
+
+    <TextView
+        android:id="@+id/questionText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/marine"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textAlignment="center"
+
+        android:textSize="20sp"
+        android:text="Viel Erfolg - Offene Fragen"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/questionText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionText1"
+        android:textStyle="bold"
+        android:textColor="@color/marine"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textAlignment="center"
+
+        android:textSize="14sp"
+        android:text="Thema"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/infoImageOpen"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/questionText2"
+        android:src="@drawable/ic_action_info"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/questionRecyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoImageOpen"
+        android:layout_marginTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:nestedScrollingEnabled="true" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/questionfab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="32dp"
+        android:backgroundTint="@color/marine"
+        android:src="@drawable/ic_baseline_add_24" />
+
+</RelativeLayout>
